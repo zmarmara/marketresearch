@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Έρευνα Αγοράς | Θέμα Εξάσκησης</title>
+  <style>
+    :root{
+      --bg:#f7f4ef;
+      --card:#ffffff;
+      --ink:#24211d;
+      --muted:#6e665d;
+      --accent:#7a4e2d;
+      --accent-soft:#efe3d7;
+      --line:#ddd2c6;
+      --ok:#365f43;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:var(--bg);
+      color:var(--ink);
+      line-height:1.55;
+    }
+    .page{
+      width:min(100%, 980px);
+      margin:0 auto;
+      padding:20px 14px 48px;
+    }
+    header{
+      background:linear-gradient(135deg, #fff, var(--accent-soft));
+      border:1px solid var(--line);
+      border-radius:22px;
+      padding:22px 18px;
+      box-shadow:0 8px 24px rgba(68,45,25,.08);
+      margin-bottom:18px;
+    }
+    .eyebrow{
+      color:var(--accent);
+      font-weight:700;
+      font-size:.86rem;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+      margin:0 0 6px;
+    }
+    h1{
+      font-size:1.55rem;
+      line-height:1.18;
+      margin:0 0 10px;
+    }
+    h2{
+      font-size:1.1rem;
+      color:var(--accent);
+      margin:24px 0 10px;
+    }
+    h3{
+      font-size:1rem;
+      margin:18px 0 8px;
+    }
+    p{margin:0 0 12px}
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:16px;
+      margin:14px 0;
+      box-shadow:0 6px 18px rgba(68,45,25,.05);
+    }
+    .question-box{
+      background:#fffaf5;
+      border-left:5px solid var(--accent);
+      border-radius:14px;
+      padding:14px;
+      margin-top:12px;
+    }
+    ol{padding-left:1.25rem;margin:8px 0 0}
+    li{margin:6px 0}
+    .answer-item{
+      border-top:1px solid var(--line);
+      padding-top:14px;
+      margin-top:14px;
+    }
+    .answer-item:first-child{border-top:0;padding-top:0;margin-top:0}
+    .label{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      width:32px;
+      height:32px;
+      border-radius:50%;
+      background:var(--accent-soft);
+      color:var(--accent);
+      font-weight:800;
+      margin-right:8px;
+    }
+    .subnote{
+      color:var(--muted);
+      font-size:.94rem;
+    }
+    .table-wrap{
+      overflow-x:auto;
+      border:1px solid var(--line);
+      border-radius:16px;
+      background:var(--card);
+      box-shadow:0 6px 18px rgba(68,45,25,.05);
+    }
+    table{
+      width:100%;
+      border-collapse:collapse;
+      min-width:900px;
+    }
+    th,td{
+      text-align:left;
+      vertical-align:top;
+      padding:12px 10px;
+      border-bottom:1px solid var(--line);
+      font-size:.94rem;
+    }
+    th{
+      background:var(--accent-soft);
+      color:var(--accent);
+      font-weight:800;
+      position:sticky;
+      top:0;
+    }
+    tr:last-child td{border-bottom:0}
+    .pill{
+      display:inline-block;
+      background:#f4eee7;
+      border:1px solid var(--line);
+      color:#4a3b2f;
+      border-radius:999px;
+      padding:2px 8px;
+      margin:2px 2px 2px 0;
+      font-size:.84rem;
+      white-space:nowrap;
+    }
+    .footer-note{
+      margin-top:16px;
+      color:var(--muted);
+      font-size:.9rem;
+    }
+    @media (min-width:720px){
+      .page{padding:34px 24px 64px}
+      header{padding:30px}
+      h1{font-size:2.05rem}
+      h2{font-size:1.35rem}
+      .card{padding:22px}
+    }
+    @media print{
+      body{background:#fff}
+      .page{max-width:none;padding:0}
+      header,.card,.table-wrap{box-shadow:none}
+      table{min-width:0;font-size:10pt}
+      th,td{padding:7px}
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <p class="eyebrow">Θέματα εξάσκησης</p>
+      <h1>Έρευνα Αγοράς: Μείωση πρωινής κίνησης σε μικρή αλυσίδα καφέ</h1>
+      <p>Σκελετός απάντησης για περιγραφική ποσοτική έρευνα πεδίου με δομημένο ερωτηματολόγιο.</p>
+    </header>
+
+    <section class="card">
+      <h2>Εκφώνηση</h2>
+      <p><strong>Είσαστε Marketing Manager μιας μικρής αλυσίδας καφέ που διαθέτει 3 καταστήματα σε μια πόλη. Η επιχείρηση παρατηρεί μείωση της πρωινής κίνησης και θέλει να διερευνήσει πώς μπορεί να την αυξήσει.</strong></p>
+      <div class="question-box">
+        <p><strong>Απαντήστε:</strong></p>
+        <ol type="a">
+          <li>Προσδιορίστε το διοικητικό και το ερευνητικό πρόβλημα.</li>
+          <li>Προσδιορίστε τις υπό διερεύνηση μεταβλητές.</li>
+          <li>Ποιο είδος/τύπο έρευνας θα υλοποιούσατε;</li>
+          <li>Ποιος είναι ο υπό εξέταση πληθυσμός;</li>
+          <li>Προσδιορίστε το δειγματοληπτικό πλαίσιο και το δείγμα.</li>
+          <li>Ποια μέθοδο δειγματοληψίας θα επιλέγατε και γιατί;</li>
+          <li>Περιγράψτε τη διαδικασία επιλογής των συμμετεχόντων.</li>
+          <li>Φτιάξτε 10 ερωτήσεις ερωτηματολογίου με διαφορετικούς τύπους ερωτήσεων και κλίμακες. Για κάθε μεταβλητή, ορίστε την κλίμακα μέτρησής της και τον τύπο της ερώτησης.</li>
+          <li>Επιλέξτε τη βέλτιστη μέθοδο συλλογής στοιχείων και αιτιολογήστε.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Ενδεικτική απάντηση</h2>
+
+      <div class="answer-item">
+        <h3><span class="label">α</span>Διοικητικό και ερευνητικό πρόβλημα</h3>
+        <p>Το διοικητικό πρόβλημα της επιχείρησης είναι η μείωση της πρωινής κίνησης και η ανάγκη αύξησής της. Το ερευνητικό πρόβλημα αφορά τον προσδιορισμό των παραγόντων που επηρεάζουν την επιλογή σημείου αγοράς καφέ κατά τις πρωινές ώρες και την πρόθεση αγοράς από τα καταστήματα της επιχείρησης.</p>
+      </div>
+
+      <div class="answer-item">
+        <h3><span class="label">β</span>Υπό διερεύνηση μεταβλητές</h3>
+        <p>Οι υπό διερεύνηση μεταβλητές θα μπορούσαν να είναι η συχνότητα αγοράς, οι προτιμήσεις ως προς τον τύπο καφέ, τα κριτήρια επιλογής, τα κανάλια αγοράς ή σημεία προμήθειας, η πρόθεση αγοράς, η αποδεκτή τιμή και το προφίλ των καταναλωτών, όπως ηλικία, απασχόληση και εισόδημα.</p>
+      </div>
+
+      <div class="answer-item">
+        <h3><span class="label">γ</span>Είδος έρευνας</h3>
+        <p>Θα υλοποιούσαμε περιγραφική ποσοτική έρευνα πεδίου με τη χρήση δομημένου ερωτηματολογίου.</p>
+      </div>
+
+      <div class="answer-item">
+        <h3><span class="label">δ</span>Υπό εξέταση πληθυσμός</h3>
+        <p>Ο υπό εξέταση πληθυσμός είναι οι ενήλικοι υπάρχοντες και δυνητικοί καταναλωτές καφέ, οι οποίοι κινούνται στις περιοχές όπου δραστηριοποιούνται τα τρία καταστήματα της επιχείρησης και αγοράζουν ή θα μπορούσαν να αγοράσουν καφέ από συνοικιακό κατάστημα κατά τις πρωινές ώρες.</p>
+      </div>
+
+      <div class="answer-item">
+        <h3><span class="label">ε</span>Δειγματοληπτικό πλαίσιο και δείγμα</h3>
+        <p>Το δειγματοληπτικό πλαίσιο αφορά τα σημεία προσέγγισης του κοινού στόχου στις περιοχές όπου λειτουργούν τα τρία καταστήματα, όπως τα ίδια τα καταστήματα της επιχείρησης, κοντινά σημεία διέλευσης, στάσεις μέσων μεταφοράς, γραφεία, σχολές, φούρνοι, περίπτερα και άλλα σημεία αγοράς πρωινού καφέ.</p>
+        <p>Το δείγμα είναι 250 ενήλικες καταναλωτές καφέ, οι οποίοι κινούνται στις περιοχές όπου δραστηριοποιούνται τα τρία καταστήματα της επιχείρησης και αγοράζουν ή θα μπορούσαν να αγοράσουν καφέ από συνοικιακό κατάστημα κατά τις πρωινές ώρες.</p>
+      </div>
+
+      <div class="answer-item">
+        <h3><span class="label">ζ</span>Μέθοδος δειγματοληψίας</h3>
+        <p>Προτείνεται δειγματοληψία μη πιθανότητας και συγκεκριμένα δειγματοληψία ευκολίας με ποσοστώσεις. Η δειγματοληψία ευκολίας είναι κατάλληλη, επειδή η επιχείρηση δραστηριοποιείται τοπικά, διαθέτει περιορισμένο χρόνο και κόστος και χρειάζεται γρήγορη συλλογή δεδομένων από άτομα που κινούνται στις περιοχές των καταστημάτων.</p>
+        <p>Οι ποσοστώσεις χρησιμοποιούνται ώστε να αποφευχθεί υπερεκπροσώπηση συγκεκριμένων ομάδων στην έρευνα και το δείγμα να μην αποτελείται υπερβολικά από μία μόνο ομάδα, π.χ. μόνο εργαζόμενους γραφείου ή μόνο φοιτητές.</p>
+        <p><strong>Ποσοστώσεις:</strong> Οι ποσοστώσεις μπορούν να οριστούν με βάση ηλικιακή ομάδα, φύλο, τύπο καταναλωτή καφέ, υπάρχοντες/δυνητικούς πελάτες και σημείο προσέγγισης. Έτσι το δείγμα θα περιλαμβάνει διαφορετικές ομάδες καταναλωτών που είναι σχετικές με το ερευνητικό πρόβλημα.</p>
+      </div>
+
+      <div class="answer-item">
+        <h3><span class="label">στ</span>Διαδικασία επιλογής συμμετεχόντων</h3>
+        <p>Οι ερευνητές θα προσεγγίσουν άτομα σε προκαθορισμένα σημεία γύρω από τα τρία καταστήματα, όπως τα ίδια τα καταστήματα, κοντινά σημεία διέλευσης, γραφεία, σχολές, φούρνους και σημεία αγοράς πρωινού καφέ. Αρχικά θα ελέγχεται αν οι συμμετέχοντες είναι ενήλικοι και αν αγοράζουν ή καταναλώνουν καφέ τις πρωινές ώρες. Στη συνέχεια θα συμπληρώνουν το δομημένο ερωτηματολόγιο, μέχρι να συμπληρωθούν οι προκαθορισμένες ποσοστώσεις ανά ομάδα.</p>
+      </div>
+
+      <div class="answer-item">
+        <h3><span class="label">η</span>Ερωτηματολόγιο</h3>
+        <p class="subnote">Ο πίνακας περιλαμβάνει 10 ερωτήσεις με μεταβλητή, ενδεικτικές απαντήσεις, τύπο ερώτησης και κλίμακα μέτρησης.</p>
+      </div>
+    </section>
+
+    <section class="table-wrap" aria-label="Πίνακας ερωτηματολογίου">
+      <table>
+        <thead>
+          <tr>
+            <th>Μεταβλητή</th>
+            <th>Ερώτηση</th>
+            <th>Απαντήσεις</th>
+            <th>Τύπος ερώτησης</th>
+            <th>Κλίμακα</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Συχνότητα αγοράς</td>
+            <td>Ποια είναι η συχνότητα με την οποία προμηθεύεστε καφέ από συνοικιακά καφέ το πρωί;</td>
+            <td><span class="pill">Καθημερινά</span><span class="pill">2-3 φορές την εβδομάδα</span><span class="pill">1 φορά την εβδομάδα</span><span class="pill">Λιγότερο συχνά</span><span class="pill">Ποτέ</span></td>
+            <td>Κλειστή πολλαπλής επιλογής</td>
+            <td>Τακτική (Ordinal)</td>
+          </tr>
+          <tr>
+            <td>Προτιμήσεις</td>
+            <td>Τι τύπο καφέ προτιμάτε να πίνετε το πρωί;</td>
+            <td><span class="pill">Ελληνικό</span><span class="pill">Εσπρέσο</span><span class="pill">Καπουτσίνο</span><span class="pill">Εσπρέσο Φρέντο</span><span class="pill">Καπουτσίνο Φρέντο</span><span class="pill">Λάτε</span><span class="pill">Γαλλικό</span><span class="pill">Φραπέ</span><span class="pill">Άλλο</span></td>
+            <td>Κλειστή πολλαπλής επιλογής</td>
+            <td>Ονομαστική (Nominal)</td>
+          </tr>
+          <tr>
+            <td>Κριτήρια επιλογής</td>
+            <td>Πόσο σημαντικά είναι για εσάς τα παρακάτω κριτήρια κατά την επιλογή πρωινού καφέ;</td>
+            <td><strong>Κριτήρια:</strong> Τιμή, ποιότητα, προέλευση, γεύση, ταχύτητα εξυπηρέτησης.<br><strong>Κλίμακα:</strong> 1 Καθόλου σημαντικό, 2 Λίγο σημαντικό, 3 Ούτε σημαντικό ούτε ασήμαντο, 4 Σημαντικό, 5 Πολύ σημαντικό.</td>
+            <td>Κλίμακα Likert / σημαντικότητας</td>
+            <td>Τακτική (Ordinal)</td>
+          </tr>
+          <tr>
+            <td>Κανάλι αγοράς / σημείο προμήθειας</td>
+            <td>Σε ποιο σημείο αγοράζετε συνήθως τον πρωινό σας καφέ;</td>
+            <td><span class="pill">Καφέ κοντά στον χώρο εργασίας μου</span><span class="pill">Κατάστημα 1 της εταιρείας Χ</span><span class="pill">Κατάστημα 2 της εταιρείας Χ</span><span class="pill">Κατάστημα 3 της εταιρείας Χ</span><span class="pill">Καφέ κοντά σε στάση μέσων μεταφοράς</span><span class="pill">Καφέ κοντά στο σπίτι</span><span class="pill">Φούρνος</span><span class="pill">Περίπτερο</span><span class="pill">Άλλο</span></td>
+            <td>Κλειστή πολλαπλής επιλογής</td>
+            <td>Ονομαστική (Nominal)</td>
+          </tr>
+          <tr>
+            <td>Πρόθεση αγοράς</td>
+            <td>Πόσο πιθανό είναι να αγοράσετε καφέ από κάποιο από τα καταστήματά μας τις επόμενες 30 ημέρες;</td>
+            <td><span class="pill">1 Καθόλου πιθανό</span><span class="pill">2 Λίγο πιθανό</span><span class="pill">3 Ούτε πιθανό ούτε απίθανο</span><span class="pill">4 Πιθανό</span><span class="pill">5 Πολύ πιθανό</span></td>
+            <td>Κλίμακα Likert</td>
+            <td>Τακτική (Ordinal)</td>
+          </tr>
+          <tr>
+            <td>Αποδεκτή τιμή</td>
+            <td>Ποια τιμή θεωρείτε αποδεκτή για τον καφέ που πίνετε το πρωί;</td>
+            <td><span class="pill">Κάτω από 2,00€</span><span class="pill">2,01€-2,49€</span><span class="pill">2,50€-2,99€</span><span class="pill">3,00€-3,49€</span><span class="pill">3,50€ και άνω</span></td>
+            <td>Κλειστή πολλαπλής επιλογής</td>
+            <td>Τακτική (Ordinal)</td>
+          </tr>
+          <tr>
+            <td>Ώρα αγοράς</td>
+            <td>Συνήθως ποια ώρα αγοράζετε τον πρωινό σας καφέ;</td>
+            <td><span class="pill">06:00-07:00</span><span class="pill">07:01-08:00</span><span class="pill">08:01-09:00</span><span class="pill">09:01-10:00</span><span class="pill">Μετά τις 10:00</span></td>
+            <td>Κλειστή πολλαπλής επιλογής</td>
+            <td>Τακτική (Ordinal)</td>
+          </tr>
+          <tr>
+            <td>Ηλικία</td>
+            <td>Σε ποια ηλικιακή ομάδα ανήκετε;</td>
+            <td><span class="pill">18-24</span><span class="pill">25-34</span><span class="pill">35-44</span><span class="pill">45-54</span><span class="pill">55+</span></td>
+            <td>Κλειστή πολλαπλής επιλογής</td>
+            <td>Τακτική (Ordinal)</td>
+          </tr>
+          <tr>
+            <td>Απασχόληση</td>
+            <td>Ποια είναι η κύρια επαγγελματική σας κατάσταση;</td>
+            <td><span class="pill">Μισθωτός</span><span class="pill">Ελεύθερος επαγγελματίας</span><span class="pill">Φοιτητής</span><span class="pill">Άνεργος</span><span class="pill">Συνταξιούχος</span><span class="pill">Άλλο</span></td>
+            <td>Κλειστή πολλαπλής επιλογής</td>
+            <td>Ονομαστική (Nominal)</td>
+          </tr>
+          <tr>
+            <td>Εισόδημα</td>
+            <td>Σε ποια κατηγορία μηνιαίου καθαρού εισοδήματος ανήκετε;</td>
+            <td><span class="pill">Έως 800€</span><span class="pill">801€-1.200€</span><span class="pill">1.201€-1.800€</span><span class="pill">1.801€-2.500€</span><span class="pill">Πάνω από 2.500€</span><span class="pill">Δεν επιθυμώ να απαντήσω</span></td>
+            <td>Κλειστή πολλαπλής επιλογής</td>
+            <td>Τακτική (Ordinal)</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>Βέλτιστη μέθοδος συλλογής στοιχείων</h2>
+      <p>Η βέλτιστη μέθοδος συλλογής στοιχείων είναι η χρήση δομημένου ερωτηματολογίου, το οποίο θα συμπληρώνεται με προσωπική προσέγγιση των συμμετεχόντων στα σημεία όπου κινείται το κοινό στόχος, όπως τα καταστήματα της επιχείρησης, κοντινά σημεία διέλευσης, γραφεία, σχολές και σημεία αγοράς πρωινού καφέ.</p>
+      <p>Η μέθοδος αυτή είναι κατάλληλη ως προς το κόστος και τον χρόνο, επειδή επιτρέπει γρήγορη και σχετικά οικονομική συλλογή δεδομένων σε συγκεκριμένες περιοχές όπου δραστηριοποιείται η επιχείρηση.</p>
+      <p>Είναι επίσης κατάλληλη ως προς την πολυπλοκότητα και την προσπάθεια, επειδή το ερωτηματολόγιο θα είναι σύντομο, απλό και δομημένο, άρα οι απαντήσεις θα είναι εύκολες για τον συμμετέχοντα και αντίστοιχα θα διευκολύνουν και την ανάλυση και τους ερευνητές.</p>
+      <p>Ως προς την αξιοπιστία των πληροφοριών, η προσωπική προσέγγιση επιτρέπει να απευθυνθούμε σε άτομα που πράγματι κινούνται στην περιοχή και να ελέγξουμε αν καταναλώνουν ή αγοράζουν καφέ τις πρωινές ώρες, ώστε οι απαντήσεις να προέρχονται από άτομα που ανήκουν στο κοινό στόχο.</p>
+      <p>Τέλος, ως προς το σφάλμα άρνησης απάντησης, η επιλογή σύντομου και απλού ερωτηματολογίου, σε κατάλληλο σημείο και χρόνο, μπορεί να αυξήσει την πιθανότητα συμμετοχής και να μειώσει τις αρνήσεις απάντησης.</p>
+    </section>
+
+    <p class="footer-note">Έκδοση εξάσκησης για επανάληψη σε κινητό. Ο πίνακας μετακινείται οριζόντια σε μικρές οθόνες.</p>
+  </main>
+</body>
+</html>
